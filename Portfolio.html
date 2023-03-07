@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+		nav {
+			background-color: #9a12a4;
+			color: #fff;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.5rem;
+		}
+
+		.hero {
+			background-image: url('https://source.unsplash.com/random');
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.hero-text {
+			text-align: center;
+		}
+
+		.hero-text h1 {
+			font-size: 4rem;
+			margin-bottom: 20px;
+		}
+
+		.hero-text p {
+			font-size: 1.5rem;
+			margin-bottom: 40px;
+		}
+
+		.btn {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+		.about-section {
+			padding: 100px 0;
+			background-color: #f2f2f2;
+		}
+
+		.about-text {
+			max-width: 800px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.about-text h2 {
+			font-size: 3rem;
+			margin-bottom: 20px;
+		}
+
+		.about-text p {
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
+
+		.portfolio-section {
+			padding: 100px 0;
+		}
+
+		.portfolio-section h2 {
+			font-size: 3rem;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.portfolio-items {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.portfolio-item {
+			flex-basis: calc(33.33% - 20px);
+			margin-bottom: 40px;
+		}
+
+		.portfolio-item img {
+			width: 100%;
+		}
+
+		.portfolio-item h3 {
+			font-size: 1.5rem;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.contact-section {
+			padding: 100px 0;
+			background-color: #f2f2f2;
+			text-align: center;
+		}
+
+		.contact-section h2 {
+			font-size: 3rem;
+			margin-bottom: 20px;
+		}
+
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		form label {
+			display: block;
+			font-size: 1.5rem;
+			margin-bottom: 10 
+            font-weight: bold;
+		}
+
+		form input[type="text"], form input[type="email"], form textarea {
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 4px;
+			border: none;
+			width: 100%;
+			font-size: 1.2rem;
+		}
+
+		form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
+
+		form input[type="submit"]:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.footer p {
+			font-size: 1.2rem;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#">My Portfolio</a>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#resume">Resume</a></li>
+		</ul>
+	</nav>
+
+	<section class="hero">
+		<div class="hero-text">
+			<h1>Welcome to My Portfolio</h1>
+			<p>My name is John Doe and I'm a web developer</p>
+			<a href="#" class="btn">View My Work</a>
+		</div>
+	</section>
+
+	<section class="about-section" id="about">
+		<div class="about-text">
+			<h2>About Me</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec neque mauris. Etiam gravida diam vitae velit fermentum, a bibendum nisi rhoncus. Suspendisse tincidunt libero ex, et aliquet ex sagittis eget. Sed euismod leo id bibendum tincidunt. </p>
+			<p>Etiam ut ligula dolor. Donec quis elit sed velit aliquet fermentum a in erat. Morbi at malesuada sem. Suspendisse potenti. Praesent vel enim facilisis, aliquet tortor in, rutrum massa.</p>
+		</div>
+	</section>
+
+	<section class="portfolio-section" id="portfolio">
+		<h2>My Work</h2>
+		<div class="portfolio-items">
+			<div class="portfolio-item">
+				<img src="https://source.unsplash.com/random/400x400" alt="Project 1">
+				<h3>Project 1</h3>
+			</div>
+			<div class="portfolio-item">
+				<img src="https://source.unsplash.com/random/401x401" alt="Project 2">
+				<h3>Project 2</h3>
+			</div>
+			<div class="portfolio-item">
+				<img src="https://source.unsplash.com/random/402x402" alt="Project 3">
+				<h3>Project 3</h3>
+			</div>
+			<div class="portfolio-item">
+				<img src="https://source.unsplash.com/random/403x403" alt="Project 4">
+				<h3>Project 4</h3>
+			</div>
+			<div class="portfolio-item">
+				<img src="https://source.unsplash.com/random/404x404" alt="Project 5">
+                <h3>Project 5</h3>
+                </div>
+                <div class="portfolio-item">
+                <img src="https://source.unsplash.com/random/405x405" alt="Project 6">
+                <h3>Project 6</h3>
+                </div>
+                </div>
+                </section>
+				<section id="resume">
+					<h2>Resume</h2>
+					<a href="file:///C:/Users/YASH/Downloads/Resume-Yash-Mali.pdf" target="_blank">Download Resume</a>
+					</section>
+                <section class="contact-section" id="contact">
+                    <h2>Contact Me</h2>
+                    <form action="#">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                
+                        <input type="submit" value="Send">
+                    </form>
+                </section>
+                
+                <footer class="footer">
+                    <p>&copy; 2023 John Doe</p>
+                </footer>
+            </body>
+            </html>                
